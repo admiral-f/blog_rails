@@ -1,6 +1,6 @@
-<h2>New article</h2>
+<h2>Edit article</h2>
 
-<%= form_for :article, url: article_path do |f| %>
+<%= form_for :article, url: article_path(@article), method: :put do |f| %>
 	<% if @article && @article.errors.any? %>
 	<p>
 		<ul>
