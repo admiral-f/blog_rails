@@ -3,3 +3,5 @@
 <p>
 	<%= @article.text %>
 <p>
+<hr>
+<%= link_to 'Destroy', article_path(@article), method: :delete, data: { confirm: 'Are you sure?' } %>
