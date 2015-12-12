@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'about' => 'pages#about'
   resource :contacts, only: [:new, :create], path_names: { :new =>'' }
   resources :articles do
-    resources :comments
+    resources :comments, only: [:create]
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

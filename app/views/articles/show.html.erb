@@ -4,6 +4,13 @@
 	<%= @article.text %>
 <p>
 <hr>
+<% @article.comments.each do |comment| %>	
+	<p><b><%= comment.author %>: </b>
+		<%= comment.body %>
+	</p>
+	</br>	
+<% end %>
+<hr>
 <%= form_for([@article, @article.comments.build]) do |f|  %>
 	<p>
 		<%= f.label :author %> </br>
