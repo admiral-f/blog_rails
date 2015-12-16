@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  before_filter :authenticate_user!, :only=>[:new, :create]
+  before_filter :authenticate_user!, :only=>[:new, :create, :edit]
 
   def index
     @articles=Article.order('created_at DESC')
@@ -22,7 +22,14 @@ class ArticlesController < ApplicationController
   end
 
   def edit
-    @article=Article.find(params[:id])
+    if current_user.username=='leha'
+      @article=Article.find(params[:id])
+    else
+      @article=Article.find(params[:id])
+      @error="You can't edit this post"
+      render action: 'show'
+
+    end
   end
 
   def update
