@@ -14,6 +14,7 @@ class ArticlesController < ApplicationController
 
   def create
     @article=Article.new(article_params)
+    @article.author = current_user.username
     if @article.save
       redirect_to @article
     else
@@ -22,8 +23,9 @@ class ArticlesController < ApplicationController
   end
 
   def edit
-    if current_user.username=='leha'
-      @article=Article.find(params[:id])
+    @article=Article.find(params[:id])
+    if @article.author==current_user.username
+      
     else
       @article=Article.find(params[:id])
       @error="You can't edit this post"
