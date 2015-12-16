@@ -9,7 +9,7 @@
 	<hr>
 	<p> <%= article.text %></p>
 	<hr>
-	<div >
+	<div class="navbar-right">
 
 		<%= link_to "#{article.comments.count} Comments", article_path(article) %> |                             
 		<span class="glyphicon glyphicon-time"></span> <%= article.created_at %> |

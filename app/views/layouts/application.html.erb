@@ -47,6 +47,9 @@
 					</ul>
 			  </div>
 			</nav>
+<%if @error && @error.length > 0 then %>
+	<div class="alert alert-danger"><%=@error%></div>
+<% end %>
 <%if alert  then %>
 	<div class="alert alert-danger"><%= alert%></div>
 <% end %>
@@ -57,10 +60,5 @@
 </body>
 </html>
 
-<script type="text/javascript">
-  $(function(){
-    $('.collapse').collapse();
-  
-  });
-</script>
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 
