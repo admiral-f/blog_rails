@@ -13,11 +13,15 @@
 	</div>	
 <% end %>
 <hr>
-<%= form_for([@article, @article.comments.build]) do |f|  %>
-	<p>
-		<%= f.text_area :body, class: "form-control", rows: "4", style: "width: 300px" %>		
-	</p>
-	<p>
-		<%= f.submit "Yarrr!", class: "btn btn-success" %>
-	</p>
+<% if user_signed_in? %>
+	<%= form_for([@article, @article.comments.build]) do |f|  %>
+		<p>
+			<%= f.text_area :body, class: "form-control", rows: "4", style: "width: 300px" %>		
+		</p>
+		<p>
+			<%= f.submit "Yarrr!", class: "btn btn-success" %>
+		</p>
+	<% end %>
+<% else %>
+	<i>Please <%= link_to "sign in", new_user_session_path %> or <%= link_to "register", new_user_registration_path %> to leave comments</i>
 <% end %>
