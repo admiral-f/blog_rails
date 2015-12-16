@@ -5,11 +5,12 @@
 <p>
 <hr>
 <h2>Comments:</h2>
-<% @article.comments.each do |comment| %>	
+<% @article.comments.each do |comment| %>
+<div class="bs-callout bs-callout-success">	
 	<p><b><%= comment.author %>: </b>
 		<i><%= comment.body %></i>
 	</p>
-	</br>	
+	</div>	
 <% end %>
 <hr>
 <%= form_for([@article, @article.comments.build]) do |f|  %>
