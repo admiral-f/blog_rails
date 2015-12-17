@@ -7,7 +7,7 @@
 	<div class="bs-callout bs-callout-success">	
 	<h4><%= link_to article.title,article_path(article) %> by <%= article.author %></h4>
 	<hr>
-	 <%= article.text %>
+	 <%= truncate(article.text, length: 250) %>
 	<hr>
 	<div class="navbar-right">
 
