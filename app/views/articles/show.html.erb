@@ -1,12 +1,14 @@
-<h1><%= @article.title %></h1>
+<div class="bs-callout bs-callout-success">
+<h4><%= @article.title %></h4>
 </br>
 <p>
 	<%= @article.text %>
 <p>
+</div>
 <hr>
 <h2>Comments:</h2>
 <% @article.comments.each do |comment| %>
-<div class="bs-callout bs-callout-success">	
+<div class="bs-callout bs-callout-com">	
 	<p><b><%= comment.author %>: </b>
 		<i><%= comment.body %></i>
 	</p>

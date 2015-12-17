@@ -1,25 +1,32 @@
-<h2>New article</h2>
+<div class="container">
+	<div class="row">
+	<div class="col-xs-2"></div>
+		<div class="col-md-8 col-sm-8 col-xs-12">
+		<h2>New article</h2>
 
-<%= form_for :article, url: articles_path do |f| %>
-	<% if @article && @article.errors.any? %>
-	<p>
-		<ul>
-		<% @article.errors.full_messages.each do |msg| %>
-			<li><%= msg %></li>
+		<%= form_for :article, url: articles_path do |f| %>
+			<% if @article && @article.errors.any? %>
+			<p>
+				<ul>
+				<% @article.errors.full_messages.each do |msg| %>
+					<li><%= msg %></li>
+				<% end %>
+				</ul>
+			</p>
+			<% end %>
+			<p>
+				<%= f.label :title %> </br>
+				<%= f.text_field :title %>		
+			</p>
+			<p>
+				<%= f.label :text %> </br>
+				<%= f.text_area :text, class: "form-control", rows: "6", style: "width: 400px"%>		
+			</p>
+			<p>
+				<%= f.submit "Yarrr!", class: "btn btn-success"  %>
+			</p>
 		<% end %>
-		</ul>
-	</p>
-	<% end %>
-	<p>
-		<%= f.label :title %> </br>
-		<%= f.text_field :title %>		
-	</p>
-	<p>
-		<%= f.label :text %> </br>
-		<%= f.text_area :text %>		
-	</p>
-	<p>
-		<%= f.submit "Yarrr!", class: "btn btn-success"  %>
-	</p>
-<% end %>
+		</div>
+	</div>
+</div>
 
