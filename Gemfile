@@ -37,6 +37,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :test, :development do
   gem 'rspec-rails', '~> 2.4'
   gem 'capybara'
+  gem 'shoulda-matchers'
 end
 
 group :development do
