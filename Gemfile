@@ -34,9 +34,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-group :development, :test do
-  # Call 'byebug'=> 'pry' anywhere in the code to stop execution and get a debugger console
-  gem 'pry'
+group :test, :development do
+  gem 'rspec-rails', '~> 2.4'
+  gem 'capybara'
 end
 
 group :development do
