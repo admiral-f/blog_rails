@@ -22,4 +22,10 @@ describe Article do
       expect(article.last_comment.body).to eq 'comment body 3'
     end
   end
+
+  describe "max_length" do
+    it { should validate_length_of(:title).is_at_most(400) }
+    it { should validate_length_of(:text).is_at_most(4000) }
+  end
+
 end
