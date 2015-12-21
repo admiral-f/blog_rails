@@ -6,7 +6,7 @@
 <p>
 </div>
 <hr>
-<h2>Comments:</h2>
+<h2><%= t('articles.article_comments') %></h2>
 <% @article.comments.each do |comment| %>
 <div class="bs-callout bs-callout-com">	
 	<p><b><%= comment.author %>: </b>

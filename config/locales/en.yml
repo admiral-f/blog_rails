@@ -29,6 +29,7 @@ en:
     article_edit: "Edit article!"
     article_new: "Create new Article"
     article_index: "Articles:"
+    article_comments: "Comments:"
 
   home:
     home_header: "Hi, welcome to Alex's blog"
