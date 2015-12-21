@@ -24,3 +24,23 @@ en:
 
   contacts:
     contact_us: "Contact Us!"
+
+  articles:
+    article_edit: "Edit article!"
+    article_new: "Create new Article"
+    article_index: "Articles:"
+
+  home:
+    home_header: "Hi, welcome to Alex's blog"
+    home_text: "C'mon, enjoy it"
+
+  about:
+    about_header: "All about me and my Blog"
+    about_text: "Hi! My name is Alex and this is my first blog on Ruby on rails"
+
+  terms:
+    terms_header: "Our terms"
+    terms_text: "1. Bla-bla!"
+
+  layout:
+    layout_brand: "Alex's Blog"

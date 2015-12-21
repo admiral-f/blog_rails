@@ -2,7 +2,7 @@
 	<div class="row">
 	<div class="col-xs-2"></div>
 		<div class="col-md-8 col-sm-8 col-xs-12">
-		<h2>Edit article</h2>
+		<h2><%= t('articles.article_edit') %></h2>
 
 		<%= form_for :article, url: article_path(@article), method: :put do |f| %>
 			<% if @article && @article.errors.any? %>
