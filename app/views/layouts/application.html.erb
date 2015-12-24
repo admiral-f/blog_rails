@@ -45,7 +45,7 @@
 			       		<%= current_user.username %>
 						<span class="caret"></span></a>
 						<ul class="dropdown-menu">
-						<li><a href="#"><%= current_user.username %>'s Profile</a></li>
+						<li><a href="<%= edit_user_registration_path %>"><%= current_user.username %>'s Profile</a></li>
 						<li role="separator" class="divider"></li>
 						<li><%= link_to 'Sign out', destroy_user_session_path, method: :delete %></li>
 						</ul>
