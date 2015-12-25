@@ -24,12 +24,9 @@
 <% end %>
 </div>
 </div>
+<center>
+<div class="pagination">
+	<%= will_paginate @posts, renderer: BootstrapPagination::Rails %>
 </div>
-<ul class="pager"> 
-	                <li class="previous">
-	                    <a href="#">← Older</a>
-	                </li> 
-	                <li class="next">
-	                    <a href="#">Newer →</a>
-	                </li> 
-	            </ul>
+</center>
+</div>
