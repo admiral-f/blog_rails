@@ -15,3 +15,7 @@
 /log/*
 !/log/.keep
 /tmp
+
+public/system/users/avatars/000/000/005/medium/100.jpg
+public/system/users/avatars/000/000/005/original/100.jpg
+public/system/users/avatars/000/000/005/thumb/100.jpg
