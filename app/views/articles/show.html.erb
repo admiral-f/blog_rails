@@ -8,10 +8,18 @@
 <hr>
 <h2><%= t('articles.article_comments') %></h2>
 <% @article.comments.each do |comment| %>
-<div class="bs-callout bs-callout-com">	
-	<p><b><%= comment.author %>: </b>
-		<i><%= comment.body %></i>
-	</p>
+	<div class="bs-callout bs-callout-com">	
+		<div class="row">
+			<div class="col-xs-2">
+			<center>
+				<%= image_tag comment.avatar_url %>
+			</center>
+			</div>
+			<div class="col-xs-10">
+				<p><b><%= comment.author %>: </b>
+				<i><%= comment.body %></i></p>
+			</div>
+		</div>
 	</div>	
 <% end %>
 <hr>

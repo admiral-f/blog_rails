@@ -4,6 +4,7 @@ class CommentsController < ApplicationController
     @article=Article.find(params[:article_id])
     @comment = @article.comments.new(comment_params)
     @comment.author = current_user.username
+    @comment.avatar_url=current_user.avatar.url(:thumb)
     if @comment.save
       
     else
