@@ -15,7 +15,7 @@ feature "Comment Creation" do
   scenario "allows user to create new comment" do
     visit '/articles/1'
     fill_in :comment_body, :with => 'example comment'
-    click_button 'Yarrr!'
+    click_button 'Yarrr!', :match => :first
     expect(page).to have_content 'example comment'
   end
 end

@@ -14,9 +14,9 @@ feature "Article edit" do
 
   scenario "allows user to edit article" do
     visit '/articles/1/edit'
-    fill_in :article_title, :with => 'example title 2'
-    fill_in :article_text, :with => 'example text 2'
-    click_button 'Yarrr!'
+    fill_in :article_title, :with => 'example title 2',  :match => :first
+    fill_in :article_text, :with => 'example text 2',  :match => :first
+    click_button 'Yarrr!', :match => :first
     expect(page).to have_content 'example title 2'
   end
 end
