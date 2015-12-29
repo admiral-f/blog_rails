@@ -4,6 +4,7 @@ gem 'json', '1.8.1'
 gem 'devise'
 gem 'will_paginate-bootstrap'
 gem 'paperclip'
+gem 'pg'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
