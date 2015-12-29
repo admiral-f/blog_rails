@@ -1,0 +1,93 @@
+/* line 4, C:/Projects/blog/app/assets/stylesheets/articles.scss */
+.bs-callout {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+}
+
+/* line 11, C:/Projects/blog/app/assets/stylesheets/articles.scss */
+.bs-callout h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+/* line 15, C:/Projects/blog/app/assets/stylesheets/articles.scss */
+.bs-callout p:last-child {
+  margin-bottom: 0;
+}
+
+/* line 18, C:/Projects/blog/app/assets/stylesheets/articles.scss */
+.bs-callout code {
+  border-radius: 3px;
+}
+
+/* line 21, C:/Projects/blog/app/assets/stylesheets/articles.scss */
+.bs-callout + .bs-callout {
+  margin-top: -5px;
+}
+
+/* line 24, C:/Projects/blog/app/assets/stylesheets/articles.scss */
+.bs-callout-default {
+  border-left-color: #777;
+}
+
+/* line 27, C:/Projects/blog/app/assets/stylesheets/articles.scss */
+.bs-callout-default h4 {
+  color: #777;
+}
+
+/* line 30, C:/Projects/blog/app/assets/stylesheets/articles.scss */
+.bs-callout-primary {
+  border-left-color: #428bca;
+}
+
+/* line 33, C:/Projects/blog/app/assets/stylesheets/articles.scss */
+.bs-callout-primary h4 {
+  color: #428bca;
+}
+
+/* line 36, C:/Projects/blog/app/assets/stylesheets/articles.scss */
+.bs-callout-success {
+  border-left-color: #714311;
+}
+
+/* line 39, C:/Projects/blog/app/assets/stylesheets/articles.scss */
+.bs-callout-success h4 {
+  color: #714311;
+}
+
+/* line 42, C:/Projects/blog/app/assets/stylesheets/articles.scss */
+.bs-callout-com {
+  border-left-color: #000000;
+}
+
+/* line 45, C:/Projects/blog/app/assets/stylesheets/articles.scss */
+.bs-callout-com h4 {
+  color: #000000;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+.field_with_errors input {
+	border-color: red;
+}
+
+.field_with_errors textarea {
+	border-color: red;
+}
